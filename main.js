@@ -1,5 +1,5 @@
 function setup() {
-  canvas = createCanvas(300, 300);
+  canvas = createCanvas(250, 250);
   canvas.center();
   video = createCapture(VIDEO);
   video.hide();
@@ -11,7 +11,7 @@ function modelLoaded() {
 }
 
 function draw() {
-  image(video, 200, 0, 300, 300);
+  image(video, 0, 0, 300, 300);
   classifier.classify(video, gotResult);
 }
 var previous_result = '';
