@@ -11,7 +11,7 @@ function modelLoaded() {
 }
 
 function draw() {
-  image(video, 0, 0, 250, 250);
+  image(video, 0, 0, 300, 300);
   classifier.classify(video, gotResult);
 }
 var previous_result = '';
